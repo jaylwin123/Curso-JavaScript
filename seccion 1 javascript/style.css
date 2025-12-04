@@ -1,0 +1,89 @@
+/* ID (#): Único, para UN solo elemento específico */
+#Papas_Fritas {
+    border: 2px solid red; /* Solo esta sección tendrá borde rojo */
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center; /* Centramos el contenido */
+    background-color: blanchedalmond;
+    
+}
+#Erizos{
+    border: 2px solid red; /* Solo esta sección tendrá borde rojo */
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center; /* Centramos el contenido */
+    background-color: blanchedalmond;
+}
+
+/* Seleccionamos la etiqueta body directamente (sin punto) */
+body {
+    /* Usamos la variable de color de fondo de Bootstrap (--bs-body-bg) */
+    /* Si usas --bs-body-color-rgb necesitas envolverlo en rgb(), pero es mejor usar el bg directo */
+    background-color: var(--bs-secondary-bg-subtle); 
+}
+
+/* .caja ya no es necesaria porque usamos Bootstrap para el layout */
+/* .caja{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%; 
+    margin: 2%; 
+} */
+
+
+/* Class (.): Reutilizable, para VARIOS elementos */
+.ingrediente {
+    color: green; /* Todos los ingredientes se verán verdes */
+    font-weight: bold;
+}
+
+header{
+    font-size: 22px;
+    color: red;
+    text-align: center;
+    background-color: var(--bs-warning);
+    padding-bottom: 1px;
+}
+
+h1{
+    background-color: bisque;
+    padding: 2%;
+    
+}
+
+.headers{
+    list-style: none;
+    display: inline-block;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.lista_ingrediente{
+    border: 2px orange dotted;
+    width: fit-content; /* Porcentajes son mejores costumbres ya que ayudan a la responsividad de la pagina */
+    margin: 0 auto; /* Centramos la caja de la lista */
+}
+
+/* Ejemplo de uso de variable de Bootstrap en tu propio CSS */
+.mi-borde-especial {
+    /* Usamos var() para "llamar" a la variable de Bootstrap */
+    border: 3px solid var(--bs-info-border-subtle);
+    background-color: var(--bs-info-bg-subtle); /* Fondo sutil a juego */
+    padding: 10px;
+}
+
+
+/*
+div>p{
+}
+Esto solo selecciona los parrafos que esten dentros de los div.
+div+p este solo elige el primer elemento despues del div (osea afuera)
+
+div,p{} esto hace cambios tanto para div como para p.
+
+* para todos los elementos.
+*/
+
+@media screen and (max-width: 768px){
+    
+}
