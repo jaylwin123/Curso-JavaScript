@@ -1,3 +1,5 @@
+const frutas = require("../Seccion_4_BackEnd/Servidor/frutas");
+
 const submitFruta = document.querySelector("#Valor_Introducido form");
 const secFruta = document.querySelector("#Seccion_Frutas ol");
 const totalCalorias = document.querySelector("#Seccion_Nutricional p");
@@ -18,7 +20,7 @@ function extraerValorFruta(e){
 async function jsonFruta(fruta){ //async porque usamos await adentro esto es para una funcion que no depende de nosotros
     try{
         // Usamos un "Proxy" (api.allorigins.win) para evitar el bloqueo de CORS
-        const buscar = await fetch(`https://api.allorigins.win/raw?url=https://www.fruityvice.com/api/fruit/${fruta}`)
+        const buscar = await fetch(`https://curso-javascript-7iga.onrender.com/fruta/${fruta}`)
         
         if(!buscar.ok) throw new Error("Fruta no encontrada");
 
