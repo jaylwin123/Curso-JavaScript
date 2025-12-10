@@ -1,0 +1,1 @@
+//Las apis son herramientas que nos provee el navegador para facilitar nuestro trabajo como desarrolladores

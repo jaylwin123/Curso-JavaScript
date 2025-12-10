@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas</title>
+    <script defer src="frutas.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header><a href="Comida.html">Comidas</a></header>
+    <section id="Valor_Introducido"><!--Formulario-->
+        <form> <!--Formulario-->
+            <label for="Valor Fruta">Introduce una Fruta</label>
+            <input id="Tipo_Fruta" name="fruta" type="text" placeholder="Ej: Manzana" class="card h-100 shadow-sm border-info-subtle">
+            <input type="submit" value="Enviar" class="bg-warning border-info-red"><!-- submit es mejor que button, ya que para button tendriamos que crear la funcionalidad de submit-->
+        </form>
+
+    </section>
+    <section id="Seccion_Frutas">
+        <ol>
+
+        </ol>
+    </section>
+    <section id="Seccion_Nutricional">
+        <p></p>
+    </section>
+</body>
+</html>
