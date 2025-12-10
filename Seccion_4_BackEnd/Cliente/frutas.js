@@ -1,4 +1,4 @@
-const frutas = require("../Seccion_4_BackEnd/Servidor/frutas");
+const frutas = require("../Servidor/frutas");
 
 const submitFruta = document.querySelector("#Valor_Introducido form");
 const secFruta = document.querySelector("#Seccion_Frutas ol");

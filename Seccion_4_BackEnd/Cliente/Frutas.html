@@ -1,30 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frutas</title>
     <script defer src="frutas.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <header><a href="Comida.html">Comidas</a></header>
-    <section id="Valor_Introducido"><!--Formulario-->
-        <form> <!--Formulario-->
-            <label for="Valor Fruta">Introduce una Fruta</label>
-            <input id="Tipo_Fruta" name="fruta" type="text" placeholder="Ej: Manzana" class="card h-100 shadow-sm border-info-subtle">
-            <input type="submit" value="Enviar" class="bg-warning border-info-red"><!-- submit es mejor que button, ya que para button tendriamos que crear la funcionalidad de submit-->
-        </form>
+<body class="bg-light">
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5 shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">🍎 Buscador de Frutas</a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Comida.html">Ir a Comidas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    </section>
-    <section id="Seccion_Frutas">
-        <ol>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                
+                <!-- Sección del Formulario -->
+                <section id="Valor_Introducido" class="card shadow-sm mb-4">
+                    <div class="card-header bg-white py-3">
+                        <h4 class="mb-0 text-primary">Buscar Información</h4>
+                    </div>
+                    <div class="card-body">
+                        <form class="row g-3 align-items-end">
+                            <div class="col-md-9">
+                                <label for="Tipo_Fruta" class="form-label fw-bold">Introduce una Fruta</label>
+                                <input id="Tipo_Fruta" name="fruta" type="text" class="form-control form-control-lg" placeholder="Ej: Manzana, Pera...">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="submit" value="Buscar" class="btn btn-success btn-lg w-100">
+                            </div>
+                        </form>
+                    </div>
+                </section>
 
-        </ol>
-    </section>
-    <section id="Seccion_Nutricional">
-        <p></p>
-    </section>
+                <!-- Sección de Resultados (Lista) -->
+                <section id="Seccion_Frutas" class="mb-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary mb-3">Resultados:</h5>
+                            <ol class="list-group list-group-numbered">
+                                <!-- JS inyectará aquí los items -->
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección Nutricional -->
+                <section id="Seccion_Nutricional">
+                    <div class="alert alert-info shadow-sm" role="alert">
+                        <h5 class="alert-heading">Información Nutricional</h5>
+                        <hr>
+                        <p class="mb-0 fs-5">Aquí aparecerán los detalles...</p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
